@@ -6,12 +6,10 @@ class Produto extends Component {
     return (
       <View style={styles.item}>
         <Text style={styles.titulo}>{this.props.nome}</Text>
-
-        <Text style={styles.texto}>Valor: R${this.props.valor} </Text>
+        <Text style={styles.texto}>Valor: R${this.props.valor}</Text>
         <Text style={styles.texto}>Quantidade: {this.props.quantidade}</Text>
-
-        <Text style={styles.texto}>Marca: {this.props.marca} </Text>
-        <Text style={styles.texto}>Referência: {this.props.referencia} </Text>
+        <Text style={styles.texto}>Marca: {this.props.marca}</Text>
+        <Text style={styles.texto}>Referência: {this.props.referencia}</Text>
       </View>
     );
   }
@@ -30,8 +28,8 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   texto: {
-    flex: 1,
     color: "#FFFFFF",
+    flex: 1,
   },
 });
 
