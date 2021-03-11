@@ -11,7 +11,7 @@ class App extends Component {
         {
           id: 1,
           nome: "Arroz",
-          valor: "20.00",
+          valor: "20,00",
           quantidade: 12,
           marca: "Vasconcelos",
           referencia: "001",
@@ -19,7 +19,7 @@ class App extends Component {
         {
           id: 2,
           nome: "Feijão",
-          valor: "10.00",
+          valor: "10,00",
           quantidade: 10,
           marca: "Vasconcelos",
           referencia: "002",
@@ -27,7 +27,7 @@ class App extends Component {
         {
           id: 3,
           nome: "Detergente",
-          valor: "1.99",
+          valor: "1,99",
           quantidade: 100,
           marca: "Ypê",
           referencia: "405",
@@ -35,7 +35,7 @@ class App extends Component {
         {
           id: 4,
           nome: "Café",
-          valor: "20.00",
+          valor: "20,00",
           quantidade: 5,
           marca: "Vasconcelos",
           referencia: "401",
@@ -43,7 +43,7 @@ class App extends Component {
         {
           id: 5,
           nome: "Algodão",
-          valor: "8.00",
+          valor: "8,00",
           quantidade: 3,
           marca: "Algodão do mato",
           referencia: "015",
@@ -51,7 +51,7 @@ class App extends Component {
         {
           id: 6,
           nome: "Refrigerante",
-          valor: "20.00",
+          valor: "20,00",
           quantidade: 5,
           marca: "Coca cola",
           referencia: "106",
