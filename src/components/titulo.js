@@ -13,11 +13,11 @@ class Titulo extends Component {
 
 const style = StyleSheet.create({
   titulo: {
-    fontWeight: "60",
-    fontSize: 25,
-    color: "blue",
-    padding: 15,
+    color: "#1DA1F2",
+    margin: 20,
+    fontSize: 26,
     fontWeight: "bold",
+    marginVertical: 20,
   },
 });
 
