@@ -9,7 +9,7 @@ class Produto extends Component {
         <Text style={styles.texto}>Valor: R${this.props.valor}</Text>
         <Text style={styles.texto}>Quantidade: {this.props.quantidade}</Text>
         <Text style={styles.texto}>Marca: {this.props.marca}</Text>
-        <Text style={styles.texto}>Referência: {this.props.referencia}</Text>
+        <Text style={styles.texto}>Ref: {this.props.referencia}</Text>
       </View>
     );
   }
