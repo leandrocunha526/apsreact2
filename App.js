@@ -11,7 +11,7 @@ class App extends Component {
     this.state = {
       feed: [
         {
-          id: 1,
+          id: "1",
           nome: "Arroz",
           valor: "20,00",
           quantidade: 12,
@@ -19,7 +19,7 @@ class App extends Component {
           referencia: "001",
         },
         {
-          id: 2,
+          id: "2",
           nome: "Feijão",
           valor: "10,00",
           quantidade: 10,
@@ -27,7 +27,7 @@ class App extends Component {
           referencia: "002",
         },
         {
-          id: 3,
+          id: "3",
           nome: "Detergente",
           valor: "1,99",
           quantidade: 100,
@@ -35,7 +35,7 @@ class App extends Component {
           referencia: "405",
         },
         {
-          id: 4,
+          id: "4",
           nome: "Café",
           valor: "20,00",
           quantidade: 5,
@@ -43,7 +43,7 @@ class App extends Component {
           referencia: "401",
         },
         {
-          id: 5,
+          id: "5",
           nome: "Algodão",
           valor: "8,00",
           quantidade: 3,
@@ -51,7 +51,7 @@ class App extends Component {
           referencia: "015",
         },
         {
-          id: 6,
+          id: "6",
           nome: "Refrigerante",
           valor: "20,00",
           quantidade: 5,
@@ -66,22 +66,22 @@ class App extends Component {
     return (
       <SafeAreaView styles={styles.container}>
         <ScrollView style={styles.scrollView}>
-        <Header/>
-        <Titulo titulo="Lista de produtos">{this.props.titulo}</Titulo>
-        <FlatList
-          data={this.state.feed}
-          keyExtractor={(item) => item.id}
-          renderItem={({ item }) => (
-            <Produto
-              nome={item.nome}
-              valor={item.valor}
-              quantidade={item.quantidade}
-              marca={item.marca}
-              referencia={item.referencia}
-            />
-          )}
-        />
-        <Footer/>
+          <Header />
+          <Titulo titulo="Lista de produtos">{this.props.titulo}</Titulo>
+          <FlatList
+            data={this.state.feed}
+            keyExtractor={(item) => item.id}
+            renderItem={({ item }) => (
+              <Produto
+                nome={item.nome}
+                valor={item.valor}
+                quantidade={item.quantidade}
+                marca={item.marca}
+                referencia={item.referencia}
+              />
+            )}
+          />
+          <Footer />
         </ScrollView>
       </SafeAreaView>
     );
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   scrollView: {
-    backgroundColor: 'white',
+    backgroundColor: "white",
   },
 });
 
