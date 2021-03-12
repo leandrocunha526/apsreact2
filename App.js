@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-import { StyleSheet, View, FlatList } from "react-native";
+import { StyleSheet, FlatList, SafeAreaView, ScrollView } from "react-native";
 import Produto from "./src/components/produto";
 import Header from "./src/components/header";
 import Footer from "./src/components/footer";
+import Titulo from "./src/components/titulo";
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -62,8 +64,10 @@ class App extends Component {
 
   render() {
     return (
-      <View styles={styles.container}>
+      <SafeAreaView styles={styles.container}>
+        <ScrollView style={styles.scrollView}>
         <Header/>
+        <Titulo titulo="Lista de produtos">{this.props.titulo}</Titulo>
         <FlatList
           data={this.state.feed}
           keyExtractor={(item) => item.id}
@@ -78,7 +82,8 @@ class App extends Component {
           )}
         />
         <Footer/>
-      </View>
+        </ScrollView>
+      </SafeAreaView>
     );
   }
 }
@@ -86,6 +91,9 @@ class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  scrollView: {
+    backgroundColor: 'white',
   },
 });
 

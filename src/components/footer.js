@@ -23,10 +23,12 @@ header: {
 },
 texto: {
     color: "white",
-    height: "10em",
     display: "flex",
     alignItems: "center",
-    justifyContent: "center" 
+    justifyContent: "center", 
+    textAlignVertical: "center",
+    textAlign: "center",
+    flex: 1,
 }
 
 });
