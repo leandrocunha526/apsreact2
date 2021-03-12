@@ -17,14 +17,18 @@ class App extends Component {
           quantidade: 12,
           marca: "Vasconcelos",
           referencia: "001",
+          desconto: 10,
+          promo: "Leve 5 pague 4",
         },
         {
           id: "2",
           nome: "Feijão",
           valor: "10,00",
-          quantidade: 10,
+          quantidade: 15,
           marca: "Vasconcelos",
           referencia: "002",
+          desconto: 5,
+          promo: "Leve 6 pague 4",
         },
         {
           id: "3",
@@ -33,6 +37,8 @@ class App extends Component {
           quantidade: 100,
           marca: "Ypê",
           referencia: "405",
+          desconto: 20,
+          promo: "Leve 10 pague 9",
         },
         {
           id: "4",
@@ -41,6 +47,8 @@ class App extends Component {
           quantidade: 5,
           marca: "Vasconcelos",
           referencia: "401",
+          desconto: 3,
+          promo: "Leve 2 pague 1",
         },
         {
           id: "5",
@@ -49,6 +57,8 @@ class App extends Component {
           quantidade: 3,
           marca: "Algodão do mato",
           referencia: "015",
+          desconto: 4,
+          promo: "Leve 2 pague 1",
         },
         {
           id: "6",
@@ -57,6 +67,8 @@ class App extends Component {
           quantidade: 5,
           marca: "Coca cola",
           referencia: "106",
+          desconto: 5,
+          promo: "Leve 2 pague 1",
         },
       ],
     };
@@ -78,6 +90,8 @@ class App extends Component {
                 quantidade={item.quantidade}
                 marca={item.marca}
                 referencia={item.referencia}
+                desconto={item.desconto}
+                promo={item.promo}
               />
             )}
           />
