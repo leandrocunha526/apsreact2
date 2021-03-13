@@ -95,7 +95,7 @@ class App extends Component {
               />
             )}
           />
-          <Footer />
+          <Footer texto="Products Bela Vista - 2021" />
         </ScrollView>
       </SafeAreaView>
     );

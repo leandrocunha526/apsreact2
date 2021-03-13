@@ -6,7 +6,7 @@ class Footer extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.header}>
-          <Text style={styles.texto}>Products Bela Vista - 2021</Text>
+          <Text style={styles.texto}>{this.props.texto}</Text>
         </View>
       </View>
     );
