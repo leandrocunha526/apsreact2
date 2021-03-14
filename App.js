@@ -79,7 +79,7 @@ class App extends Component {
       <SafeAreaView styles={styles.container}>
         <ScrollView style={styles.scrollView}>
           <Header />
-          <Titulo titulo="Lista de produtos">{this.props.titulo}</Titulo>
+          <Titulo titulo="Lista de produtos" />
           <FlatList
             data={this.state.feed}
             keyExtractor={(item) => item.id}

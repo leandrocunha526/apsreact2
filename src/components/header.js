@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   },
   header: {
     backgroundColor: "#3d8af7",
-    height: 46,
+    height: 50,
     width: "100%",
   },
 });
